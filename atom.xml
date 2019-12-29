@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://localhost:4000</id>
+    <title>Gus-hi</title>
+    <updated>2019-12-29T09:03:07.632Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="http://localhost:4000"/>
+    <link rel="self" href="http://localhost:4000/atom.xml"/>
+    <subtitle>“一生温暖纯良，不舍爱与自由”</subtitle>
+    <logo>http://localhost:4000/images/avatar.png</logo>
+    <icon>http://localhost:4000/favicon.ico</icon>
+    <rights>All rights reserved 2019, Gus-hi</rights>
+    <entry>
+        <title type="html"><![CDATA[Markdown基础语法笔记]]></title>
+        <id>http://localhost:4000/post/markdown-ji-chu-yu-fa-bi-ji</id>
+        <link href="http://localhost:4000/post/markdown-ji-chu-yu-fa-bi-ji">
+        </link>
+        <updated>2019-12-26T11:38:36.000Z</updated>
+        <content type="html"><![CDATA[<p>###标题<br>
+<strong>粗体</strong><br>
+<em>斜体</em><br>
+<s>删除线</s><br>
+2<sup>10</sup><br>
+H<sub>2</sub>O</p>
+<p><sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
+<ul>
+<li>1
+<ul>
+<li>a</li>
+</ul>
+<ul>
+<li>ss</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>有序列表</li>
+</ol>
+<p>[x]<br>
+[]</p>
+<blockquote>
+<p>温故而知新</p>
+</blockquote>
+<p><a href="https://www.bilibili.com/">哔哩哔哩</a></p>
+<pre><code>#include&lt;stdio.h&gt;
+int main (){
+    printf(&quot;hello world!!!&quot;)
+    return 0;
+}
+</code></pre>
+<p><code>hello world</code></p>
+<table>
+<thead>
+<tr>
+<th>科目</th>
+<th style="text-align:right">分数</th>
+<th style="text-align:left">排名</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>语文</td>
+<td style="text-align:right">90</td>
+<td style="text-align:left">1</td>
+</tr>
+</tbody>
+</table>
+<p><font size=3 color=green face="微软雅黑">绿色<font></p>
+<p><ins>下划线效果</ins><br>
+<u>下划线效果</u></p>
+<table><tr><td bgcolor=green>绿色</td></tr></table>
+<p align="center">居中对齐</p>
+<p align=left>左对齐</p>
+<p align=right>右对齐</p>
+<center>
+居中对齐
+</center>
+<p>[TOC]</p>
+<hr>
+<ol>
+<li>对于对于MarkDown中的语法符号，前面加“\”即可显示符号本身。<br>
+①全角空格： <br>
+②半角空格： <br>
+①连续2个以上空格+Enter<br>
+②使用HTML语言换行标签：<br></li>
+</ol>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>你好 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Excle 材料成本计算]]></title>
+        <id>http://localhost:4000/post/gong-zuo</id>
+        <link href="http://localhost:4000/post/gong-zuo">
+        </link>
+        <updated>2019-12-26T11:00:29.000Z</updated>
+        <content type="html"><![CDATA[<p>夹板<br>
+=IFERROR($AB21*VLOOKUP($H21,'\10.6.1.253\pi[Bronbestand.xls]PLYWOOD'!$D$2:$I$47,6,FALSE),0)</p>
+<p>=IFERROR($AB21*VLOOKUP($H21,'$D$2:$I$47,6,FALSE),0)</p>
+<p>=判断值的正确性($总表面*查找值($材料代码,$数据源范围,第N列,精确匹配),0)</p>
+<p>注释:$代表绝对引用，方便对公式的拖拽！<br>
+列数是从引用范围的第一列作为1，而不是以A列作为第一列！</p>
+<p>木材<br>
+=IFERROR(IF(BE12=&quot;&quot;,&quot;&quot;<br>
+,IF($AF12=&quot;WOA&quot;,BE12*INDEX('\10.6.1.253\pi[Bronbestand.xls]DT Wood price'!$E$131:$N$150,MATCH($AR12,'\10.6.1.253\pi[Bronbestand.xls]DT Wood price'!$D$131:$D$150,0),MATCH($AL12,'\10.6.1.253\pi[Bronbestand.xls]DT Wood price'!$E$130:$N$130,0))</p>
+<p>=IFERROR(IF(BE12=&quot;&quot;,&quot;&quot;<br>
+,IF($AF12=&quot;WOA&quot;,BE12*INDEX($E$131:$N$150,MATCH($AR12,$D$131:$D$150,0),MATCH($AL12,$E$130:$N$130,0))</p>
+<p>=判断值的正确性(若BE12='',''<br>
+若$材料代码为WOA,总立方*引用值($总数据源范围,$板厚度,查询$数据源列,0),(查询$最终,$数据源行,0))</p>
+<p>注释：<br>
+连续区域中index函数的公式格式是=index(array,row_num,column_num) ，其中array表示我们要引用的区域，row_num表示要引用的行数，column_num表示要引用的列数，最终的结果就是引用出区域内行列交叉处的内容。</p>
+<p>MATCH函数语法为：MATCH（lookup_value,lookuparray,match-type）<br>
+lookup_value：表示查询的指定内容；<br>
+lookuparray：表示查询的指定区域；<br>
+match-type：表示查询的指定方式，用数字-1、0或者1表示，<br>
+1或省略：查找小于或等于指定内容的最大值，而且指定区域必须按照升序排列<br>
+0：查找等于指定内容的第1个数值<br>
+-1：查找大于或小于指定内容的最小值，而且指定区域必须按照降序排序</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello Gridea]]></title>
+        <id>http://localhost:4000/post/hello-gridea</id>
+        <link href="http://localhost:4000/post/hello-gridea">
+        </link>
+        <updated>2018-12-11T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+<!-- more -->
+<p><a href="https://github.com/getgridea/gridea">Github</a><br>
+<a href="https://gridea.dev/">Gridea 主页</a><br>
+<a href="http://fehey.com/">示例网站</a></p>
+<h2 id="特性">特性👇</h2>
+<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
+<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
+<p>🏷️  你可以对文章进行标签分组</p>
+<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
+<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
+<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
+<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
+<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
+<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
+<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
+<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
+<p>未来，它一定会成为你离不开的伙伴</p>
+<p>尽情发挥你的才华吧！</p>
+<p>😘 Enjoy~</p>
+]]></content>
+    </entry>
+</feed>
