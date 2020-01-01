@@ -2,125 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gus-hi.github.io/</id>
     <title>Gus-hi</title>
-    <updated>2019-12-29T09:24:21.790Z</updated>
+    <updated>2020-01-01T05:07:24.475Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gus-hi.github.io/"/>
     <link rel="self" href="https://gus-hi.github.io//atom.xml"/>
     <subtitle>“一生温暖纯良，不舍爱与自由”</subtitle>
     <logo>https://gus-hi.github.io//images/avatar.png</logo>
     <icon>https://gus-hi.github.io//favicon.ico</icon>
-    <rights>All rights reserved 2019, Gus-hi</rights>
-    <entry>
-        <title type="html"><![CDATA[Markdown基础语法笔记]]></title>
-        <id>https://gus-hi.github.io//post/markdown-ji-chu-yu-fa-bi-ji</id>
-        <link href="https://gus-hi.github.io//post/markdown-ji-chu-yu-fa-bi-ji">
-        </link>
-        <updated>2019-12-26T11:38:36.000Z</updated>
-        <content type="html"><![CDATA[<p>###标题<br>
-<strong>粗体</strong><br>
-<em>斜体</em><br>
-<s>删除线</s><br>
-2<sup>10</sup><br>
-H<sub>2</sub>O</p>
-<p><sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
-<ul>
-<li>1
-<ul>
-<li>a</li>
-</ul>
-<ul>
-<li>ss</li>
-</ul>
-</li>
-</ul>
-<ol>
-<li>有序列表</li>
-</ol>
-<p>[x]<br>
-[]</p>
-<blockquote>
-<p>温故而知新</p>
-</blockquote>
-<p><a href="https://www.bilibili.com/">哔哩哔哩</a></p>
-<pre><code>#include&lt;stdio.h&gt;
-int main (){
-    printf(&quot;hello world!!!&quot;)
-    return 0;
-}
-</code></pre>
-<p><code>hello world</code></p>
-<table>
-<thead>
-<tr>
-<th>科目</th>
-<th style="text-align:right">分数</th>
-<th style="text-align:left">排名</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>语文</td>
-<td style="text-align:right">90</td>
-<td style="text-align:left">1</td>
-</tr>
-</tbody>
-</table>
-<p><font size=3 color=green face="微软雅黑">绿色<font></p>
-<p><ins>下划线效果</ins><br>
-<u>下划线效果</u></p>
-<table><tr><td bgcolor=green>绿色</td></tr></table>
-<p align="center">居中对齐</p>
-<p align=left>左对齐</p>
-<p align=right>右对齐</p>
-<center>
-居中对齐
-</center>
-<p>[TOC]</p>
-<hr>
-<ol>
-<li>对于对于MarkDown中的语法符号，前面加“\”即可显示符号本身。<br>
-①全角空格： <br>
-②半角空格： <br>
-①连续2个以上空格+Enter<br>
-②使用HTML语言换行标签：<br></li>
-</ol>
-<hr class="footnotes-sep">
-<section class="footnotes">
-<ol class="footnotes-list">
-<li id="fn1" class="footnote-item"><p>你好 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
-</li>
-</ol>
-</section>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Excle 材料成本计算]]></title>
-        <id>https://gus-hi.github.io//post/gong-zuo</id>
-        <link href="https://gus-hi.github.io//post/gong-zuo">
-        </link>
-        <updated>2019-12-26T11:00:29.000Z</updated>
-        <content type="html"><![CDATA[<p>夹板<br>
-=IFERROR($AB21*VLOOKUP($H21,'\10.6.1.253\pi[Bronbestand.xls]PLYWOOD'!$D$2:$I$47,6,FALSE),0)</p>
-<p>=IFERROR($AB21*VLOOKUP($H21,'$D$2:$I$47,6,FALSE),0)</p>
-<p>=判断值的正确性($总表面*查找值($材料代码,$数据源范围,第N列,精确匹配),0)</p>
-<p>注释:$代表绝对引用，方便对公式的拖拽！<br>
-列数是从引用范围的第一列作为1，而不是以A列作为第一列！</p>
-<p>木材<br>
-=IFERROR(IF(BE12=&quot;&quot;,&quot;&quot;<br>
-,IF($AF12=&quot;WOA&quot;,BE12*INDEX('\10.6.1.253\pi[Bronbestand.xls]DT Wood price'!$E$131:$N$150,MATCH($AR12,'\10.6.1.253\pi[Bronbestand.xls]DT Wood price'!$D$131:$D$150,0),MATCH($AL12,'\10.6.1.253\pi[Bronbestand.xls]DT Wood price'!$E$130:$N$130,0))</p>
-<p>=IFERROR(IF(BE12=&quot;&quot;,&quot;&quot;<br>
-,IF($AF12=&quot;WOA&quot;,BE12*INDEX($E$131:$N$150,MATCH($AR12,$D$131:$D$150,0),MATCH($AL12,$E$130:$N$130,0))</p>
-<p>=判断值的正确性(若BE12='',''<br>
-若$材料代码为WOA,总立方*引用值($总数据源范围,$板厚度,查询$数据源列,0),(查询$最终,$数据源行,0))</p>
-<p>注释：<br>
-连续区域中index函数的公式格式是=index(array,row_num,column_num) ，其中array表示我们要引用的区域，row_num表示要引用的行数，column_num表示要引用的列数，最终的结果就是引用出区域内行列交叉处的内容。</p>
-<p>MATCH函数语法为：MATCH（lookup_value,lookuparray,match-type）<br>
-lookup_value：表示查询的指定内容；<br>
-lookuparray：表示查询的指定区域；<br>
-match-type：表示查询的指定方式，用数字-1、0或者1表示，<br>
-1或省略：查找小于或等于指定内容的最大值，而且指定区域必须按照升序排列<br>
-0：查找等于指定内容的第1个数值<br>
--1：查找大于或小于指定内容的最小值，而且指定区域必须按照降序排序</p>
-]]></content>
-    </entry>
+    <rights>All rights reserved 2020, Gus-hi</rights>
 </feed>
