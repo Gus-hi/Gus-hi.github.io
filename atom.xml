@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gus-hi.github.io/</id>
-    <title>Gus-hi</title>
-    <updated>2020-01-01T07:35:46.257Z</updated>
+    <title>囚图日志</title>
+    <updated>2020-02-08T13:52:43.420Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gus-hi.github.io/"/>
-    <link rel="self" href="https://gus-hi.github.io//atom.xml"/>
+    <link rel="self" href="https://gus-hi.github.io/atom.xml"/>
     <subtitle>种一棵树最好的时间是十年前，其次是现在。</subtitle>
-    <logo>https://gus-hi.github.io//images/avatar.png</logo>
-    <icon>https://gus-hi.github.io//favicon.ico</icon>
-    <rights>All rights reserved 2020, Gus-hi</rights>
+    <logo>https://gus-hi.github.io/images/avatar.png</logo>
+    <icon>https://gus-hi.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2020, 囚图日志</rights>
 </feed>
